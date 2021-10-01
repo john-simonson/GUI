@@ -1,0 +1,86 @@
+body {
+	background-image: url("Images/ptrbackground.jpg");/*set background to gradient image*/
+	color: #666666; /*set color*/
+	font-family: Arial, Helvetica, sans-serif; /*set font*/
+	margin: 0 0;
+}
+#wrapper{
+	background-color: #66C2E0; /*set wrapper color*/
+	width: 80%;/*wrapper = 80% of screen*/
+	min-width: 600px;/*set min width*/
+	margin: 0 auto;/*horizontal center*/
+}
+header{
+	background-image: url("Images/sunset.jpg"); /*set header background picture*/
+	background-position: right; /*move image right*/
+	background-repeat: no-repeat; /*just have 1 image and not repeat across header*/
+	background-color: #030134; /*set background color for rest of header*/
+}
+nav{
+	background-color: #66C2E0; /*make nav same color as wrapper*/
+	width: 240px;/*set width to nav bar*/
+	float: left; /*move it left*/
+}
+nav ul {
+	font-size: 1.2em; /*up font size*/
+	list-style-type: none; /*remove default html styling*/
+}
+nav a{
+	text-decoration: none; /*remove default html styling*/
+	color: #02023D; /*set color*/
+}
+nav a:hover {
+	color: #FFFFFF; /*set color*/
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px; /*add padding*/
+	color: #FFFFFF; /*set color*/
+}
+h2 {
+	color: #3399CC; /*set color*/
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif; /*set font*/
+}
+#contact {
+	font-size: 90%; /*make text smaller*/
+}
+dt {
+	color: #000033; /*set color*/
+}
+footer {
+	font-family: Georgia, "Times New Roman", serif; /*set font*/
+	background-color: white; /*set background color*/
+	padding: 32px; /*add padding*/
+	margin-left: 240px; /*move footer right of nav pannel*/
+}
+
+#content{
+	background-color: white; /*set background color*/
+	margin-left: 240px; /*move footer right of nav pannel*/
+	padding: 16px 32px; /*add padding*/
+}
+
+#content img{
+	float: left; /*float image left to wrap text*/
+	padding-right: 25px;  /*add padding to right of image to move text out*/
+}
+
+#content p{
+	font-size: 110%; /*font bigger*/
+}
+
+#content ul{
+	font-size: 110%; /*font bigger*/
+	list-style: inside url("Images/marker.gif"); /*set bullet to gif*/
+}
+
+#contact{
+	font-size: 110%; /*font bigger*/
+}
+.resort{
+	color:#3399CC; /*set text color*/
+	font-weight: bold; /*make bold*/
+}
