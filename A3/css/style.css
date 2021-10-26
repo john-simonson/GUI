@@ -1,0 +1,16 @@
+/*
+    File: style.css
+    GUI Assignment: Multiplication Table
+    John Simonson, UMass Lowell Computer Science, john_simonson@student.uml.edu
+    Copyright (c) 2021 by John. All rights reserved. May be freely copied or 
+    excerpted for educational purposes with credit to the author.
+    updated by JS on October 26, 2021 at 6:00 PM
+*/
+.table-wrapper {
+    max-height: 700px;
+    max-width: 2000px;
+    min-height: 700px;
+    min-width: 2000px;
+    overflow: auto;
+    display:inline-block;
+  }

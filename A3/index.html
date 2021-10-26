@@ -1,0 +1,36 @@
+<!--
+    File: index.html
+    GUI Assignment: Multiplication Table
+    John Simonson, UMass Lowell Computer Science, john_simonson@student.uml.edu
+    Copyright (c) 2021 by John. All rights reserved. May be freely copied or 
+    excerpted for educational purposes with credit to the author.
+    updated by JS on October 26, 2021 at 6:00 PM
+-->
+<!DOCTYPE html>
+<html lang="en US">
+    <head>
+        <meta charset="utf-8">
+        <title>Multiplication Table</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script/script.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    </head>
+    <body>
+      <form class="form-group">
+        <label>Upper Bound x:</label>
+        <input id="x_high" type="number" step="1" pattern="\d+" placeholder="x upper bound"><br/>
+        <label>Lower Bound x:</label>
+        <input id="x_low" type="number" step="1" pattern="\d+" placeholder="x lower bound"><br/>
+        <label>Upper Bound y:</label>
+        <input id="y_high" type="number" step="1" pattern="\d+" placeholder="y upper bound"><br/>
+        <label>Lower Bound y:</label>
+        <input id="y_low" type="number" step="1" pattern="\d+" placeholder="y lower bound"><br/>
+      </form>
+      <input type="button" id="create" value="Submit" onclick="Javascript:addTable()">
+      <div id="Tab" class="overflow-auto">
+        </div>
+        <div id="alert_placeholder"></div>
+        <br/><br/><br/>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
