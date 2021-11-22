@@ -1,0 +1,69 @@
+<!--
+    File: index.html
+    GUI Assignment: Multiplication Table part 2
+    John Simonson, UMass Lowell Computer Science, john_simonson@student.uml.edu
+    Copyright (c) 2021 by John. All rights reserved. May be freely copied or 
+    excerpted for educational purposes with credit to the author.
+    updated by JS on November 21, 2021 at 6:00 PM
+-->
+<!DOCTYPE html>
+<html lang="en US">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Multiplication Table</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!--UI CSS-->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+     
+      </head>
+    <body>
+
+      <form id="tableForm" class="form-group">
+        <label for="x_high">Upper Bound x:</label>
+        <input id="x_high" name="x_high" placeholder="x upper bound" required><br/>
+        <div id="slider_x_high"></div>
+        
+        <label for="x_low">Lower Bound x:</label>
+        <input id="x_low" name="x_low" placeholder="x lower bound" required><br/>
+        <div id="slider_x_low"></div>
+        
+        <label for="y_high">Upper Bound y:</label>
+        <input id="y_high" name="y_high" placeholder="y upper bound" required><br/>
+        <div id="slider_y_high"></div>
+        
+        <label for="y_low">Lower Bound y:</label>
+        <input id="y_low" name="y_low" placeholder="y lower bound" required><br/>
+        <div id="slider_y_low"></div>
+      
+        <input type="submit"/>
+        <input type="button" value="Remove Tab" id="removeTabs">
+        <input type="button" value="Remove All" id="removeAll">
+      </form>
+
+      <div id="tabs" class="table table-wrapper table-responsive container col-md-6">
+        <ul>
+        </ul>
+      </div>
+
+      <div id="Tab" class="overflow-auto">
+        </div>
+
+        <!--Scripts-->
+
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <!--Validator-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.js"></script>
+        <!--Slider & Tab UI-->
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+        <!--Custom Script-->
+        <script src="scripts/script.js"></script>
+
+    </body>
+</html>
