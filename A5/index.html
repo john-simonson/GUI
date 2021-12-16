@@ -1,0 +1,60 @@
+<!--
+    File: index.html
+    GUI Assignment: Scrabble
+    John Simonson, UMass Lowell Computer Science, john_simonson@student.uml.edu
+    Copyright (c) 2021 by John. All rights reserved. May be freely copied or 
+    excerpted for educational purposes with credit to the author.
+    updated by JS on December 16, 2021 at 4:00 PM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scrabble</title>
+        <!--Bootstrap CDN-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <!--Custom Stylesheet-->
+        <link rel="stylesheet" href="css/scrabble.css">
+    </head>
+    <body>
+        <h1>Scrabble Board</h1>
+        <br/><br/><br/>
+        <div><h3 id="currentWord"></h3><h3 id="wordScore"></h3><h3 id="totalScore"></h3></div>
+        <br/><br/><br/>
+        <table id="scrabbleBoard">
+                <td id="1"></td>
+                <td id="2" class="DW"></td>
+                <td id="3"></td>
+                <td id="4"></td>
+                <td id="5"></td>
+                <td id="6" class="DW"></td>
+                <td id="7"></td>
+        </table>
+        <br/><br/><br/>
+        <table id="tileRack">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </table>
+        <br/><br/><br/>
+        <input type="button" value="Submit Word" onclick="submitWord()">
+        <input type="button" value="Reset" onclick="gameReset()">
+        <br/><br/><br/>
+        <div id="tilesLeft"></div>
+        <!--Scripts-->
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--UI--> 
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+        <!--Custom Script-->
+        <script src="js/dictionary.js"></script>
+        <script src="js/scrabble.js"></script>
+    </body>
+</html>

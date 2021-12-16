@@ -1,0 +1,58 @@
+ /*
+    File: scrabble.css
+    GUI Assignment: Scrabble
+    John Simonson, UMass Lowell Computer Science, john_simonson@student.uml.edu
+    Copyright (c) 2021 by John. All rights reserved. May be freely copied or 
+    excerpted for educational purposes with credit to the author.
+    updated by JS on December 16, 2021 at 4:00 PM
+*/
+
+#scrabbleBoard td{
+    width: 103px;
+    height: 102px;
+    background: url("../BlankSlot.png");
+}
+
+#scrabbleBoard td.DW{
+    width: 103px;
+    height: 102px;
+    background: url("../DoubleSlot.png");
+}
+
+.dropZone_Rack{
+    width: 103px;
+    height: 102px;
+}
+
+#tileRack{
+    width: 640px;
+    height: 182px;
+    margin: 0 auto;
+    background: url("../scrabble-tile-holder-406774_640.png");
+}
+
+#scrabbleBoard{
+    margin: 0 auto;
+}
+
+#tilesLeft{
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.DL{
+    display: block;
+}
+
+.DW{
+    display: block;
+}
+
+img{
+    height: 103px;
+    width: 102px;
+}
